@@ -30,3 +30,30 @@ h5,
 h6 {
   font-family: var(--font-serif);
 }
+
+/* Custom Scrollbar - WebKit (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px;
+  /* Bem fininho */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-light);
+  /* Fundo claro */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0ea5e9;
+  /* Azul celeste / Sky 500 */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-sky-accent);
+}
+
+/* Custom Scrollbar - Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #0ea5e9 var(--color-bg-light);
+}
